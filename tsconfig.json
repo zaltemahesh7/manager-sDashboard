@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",                   // Set the base directory for module resolution
+      "paths": {
+        "@/*": ["src/*"]                // Alias '@' to the 'src' folder
+      },
+      "jsx": "react-jsx",               // Ensure JSX works correctly in a React project
+      "strict": true,                   // Enable strict mode for better type safety (optional, but recommended)
+      "moduleResolution": "node",       // Use Node-style module resolution
+      "esModuleInterop": true,          // Ensures compatibility between CommonJS and ES modules
+      "skipLibCheck": true,             // Skip type checking of declaration files (improves performance)
+      "forceConsistentCasingInFileNames": true  // Ensures consistent file name casing
+    },
+    "include": [
+      "src/**/*"                         // Include all files in the 'src' folder
+    ],
+    "exclude": [
+      "node_modules",                    // Exclude node_modules from the compilation
+      "dist"                             // Exclude the build folder (if any)
+    ]
+  }
+  
